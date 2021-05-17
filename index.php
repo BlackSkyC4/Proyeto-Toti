@@ -44,6 +44,7 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	<script src="js/repo.js"></script>
+	<script src="js/vcontato.js"></script>
 	</body>
 </html>
 
