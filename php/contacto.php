@@ -7,7 +7,7 @@
 			<form action="#">
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="fname" class="form-control" placeholder="Seu Nome">
+						<input type="text" id="fname" name="nome" class="form-control" placeholder="Seu Nome" required>
 					</div>
 				</div>
 				<div class="row form-group">
@@ -18,13 +18,13 @@
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="email" class="form-control" placeholder="Seu endereço email">
+						<input type="text" id="email" name="email" class="form-control" placeholder="Seu endereço email" required >
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="subject" class="form-control" placeholder="Seu Mensagem">
+						<input type="text" id="subject" name="assunto" class="form-control" placeholder="Assunto" required>
 					</div>
 				</div>
 
