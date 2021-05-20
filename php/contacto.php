@@ -3,40 +3,32 @@
 			<div class="overlay"></div>
 		</div>
 		<div class="choose animate-box">
-			<h2>Contate-me</h2>
-			<form action="#">
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="fname" name="nome" class="form-control" placeholder="Seu Nome" required>
+			<h2>Contate-me</h2>	
+			<form name="formcontato" method="POST" action="salva_mensagem.php">
+					<div class="row form-group">
+							<div class="col-md-12">
+							<input type="text" name="nome" placeholder="Nome Completo" class="form-control" required>
+						</div>	
 					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="lname" class="form-control" placeholder="Seu Sobrenome">
+					<div class="row form-group">
+							<div class="col-md-12">
+							<input type="email" name="email" placeholder="Seu melho e-mail" class="form-control" required>
+						</div>	
 					</div>
-				</div>
+					<div class="row form-group">
+							<div class="col-md-12">
+							<input type="text" name="assunto" placeholder="Assunto do contato" class="form-control" required>
+						</div>	
+					</div>
+					<div class="row form-group">	
+						<div class="col-md-12">
+							<textarea name="mensagem" class="form-control" placeholder="Diga algo sobre nós" cols="30" rows="10"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Enviar" onclick="return validar_form_contato()" class="btn">
+					</div>
+			</form>
 
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="email" name="email" class="form-control" placeholder="Seu endereço email" required >
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="subject" name="assunto" class="form-control" placeholder="Assunto" required>
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Diga algo sobre nós"></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Enviar" class="btn">
-				</div>
-
-			</form>	
 		</div>
 	</div>
